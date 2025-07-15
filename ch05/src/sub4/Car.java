@@ -1,4 +1,4 @@
-package susb4;
+package sub4;
 
 //클래스 설계(정의)
 public class Car {

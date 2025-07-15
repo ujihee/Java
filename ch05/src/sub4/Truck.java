@@ -1,4 +1,4 @@
-package susb4;
+package sub4;
 
 public class Truck extends Car {
 
