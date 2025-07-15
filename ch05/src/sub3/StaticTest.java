@@ -50,7 +50,7 @@ public class StaticTest {
 	 * 싱글톤 객체 실습
 	 * - 싱글톤(Singleton) 객체는 static을 활용한 객체로 오직 하나의 인스턴스만 메모리상(Method Area)에 존재
 	 * - 싱글톤 객체를 사용해서 메모리 절약과 성능 향상을 기대
-	 * - 외부 생성을 맊기 위해 private 생성자 선언
+	 * - 외부 생성을 막기 위해 private 생성자 선언
 	 */
 		
 		// 여러개 객체를 생성할 필요가 없는 객체
@@ -58,14 +58,15 @@ public class StaticTest {
 		//int result = cal.plus(1, 2);
 		//System.out.println("result : " + result);
 		
-		Calc c1 = Calc.getInstance();
-		Calc c2 = Calc.getInstance();
-		Calc c3 = Calc.getInstance();
-		
-		System.out.println("1 + 2 = " c1.plus(1, 2));
-		System.out.println("1 - 2 = " c2.minus(1, 2));
-		System.out.println("2 + 3 = " c3.multi(2, 3));
-		System.out.println("4 / 2 = " c4.div(4, 2));
+	Calc c1 = Calc.getInstance();
+	Calc c2 = Calc.getInstance();
+	Calc c3 = Calc.getInstance();
+	Calc c4 = Calc.getInstance();
+	
+	System.out.println("1 + 2 = " + c1.plus(1, 2));
+	System.out.println("1 - 2 = " + c1.minus(1, 2));
+	System.out.println("2 * 3 = " + c3.multi(2, 3));
+	System.out.println("4 / 2 = " + c4.div(4, 2));
 	}
 
 }
