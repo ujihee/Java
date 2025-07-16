@@ -48,8 +48,16 @@ public class PolyATest {
 		arr[1].move();
 		arr[2].move();
 		
+		//pet 실습
+		Dog dog = new Dog();
+		Cat cat = new Cat();
 		
+		printSound(dog);
+		printSound(cat);
 		
+	}
+	public static void printSound(Pet pet) {
+		pet.makesound();
 	}
 
 }
