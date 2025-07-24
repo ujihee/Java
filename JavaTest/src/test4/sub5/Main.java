@@ -10,19 +10,19 @@ public class Main {
         Student student2 = new Student("김춘추", "S002");
         
         // 학생 과목 수강 신청
-        student1.enrollSubject(java);
-        student1.enrollSubject(database);
+        student1.enrollSubject(java); //김유신이 자바 수강
+        student1.enrollSubject(database);//김유신이 데이터베이스 수강
         System.out.println("-------------------------");
         
      // 학생 과목 수강 신청
-        student2.enrollSubject(java);
+        student2.enrollSubject(java); 
         student2.enrollSubject(database);
         System.out.println("-------------------------");
         
         // 성적 입력
-        student1.setScore(java, 96);
-        student1.setScore(database, 90);
-        System.out.println("-------------------------");
+        student1.setScore(java, 96);//김유신의 자바 점수 96점
+        student1.setScore(database, 90);//김유신의 데이터베이스 점수 90점
+        System.out.println("-------------------------");//student의 enrollSubject 메소드 호출
         
         // 성적 입력
         student2.setScore(java, 86);

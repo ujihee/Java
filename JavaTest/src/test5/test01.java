@@ -18,10 +18,10 @@ public class test01 {
 				input = sc.nextInt();
 				
 				if(input < 0) {
-					throw new Exception("음수는 입력할 수 없습니다.");
+					throw new Exception("음수는 입력할 수 없습니다."); //throws는 메서드에 선언하는 것
 				}
-			} catch (InputMismatchException e) {
-				System.out.println("숫자를 입력하세요.");
+			} catch (InputMismatchException e) { //숫자가 아닌 것을 입력할 때
+				System.out.println("숫자가 아닙니다. 숫자를 입력하세요.");
 				continue;
 				
 			} catch (Exception e) {

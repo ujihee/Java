@@ -10,7 +10,7 @@ class Apple{
 		this.price = price;
 	}
 	
-	@Override
+	@Override //object의 메서드를 재정의
 	public String toString() {
 		return "Apple [country=" + country + ", price=" + price + "]";
 	}
@@ -64,14 +64,16 @@ public class test05 {
 		showInfo(grape);
 	}
 	
-	public static void showInfo(Object fruit) {
+	public static void showInfo(Object fruit) { //최상위 클래스 object로 받는다
 		
-		if(fruit instanceof Apple) {
+		if(fruit instanceof Apple) { //object fruit-apple 검사
 			Apple apple = (Apple) fruit;
 			System.out.println(apple);
+		
 		}else if(fruit instanceof Banana) {
 			Banana banana = (Banana)fruit;
 			System.out.println(banana);
+		
 		}else if(fruit instanceof Grape) {
 			Grape grape = (Grape) fruit;
 			System.out.println(grape);

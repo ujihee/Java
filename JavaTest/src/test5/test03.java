@@ -26,8 +26,10 @@ public class test03 {
 			
 			if(!inputId.equals(userId)) {
 				throw new LoginException("아이디 틀림!");
+			
 			}else if(!inputPw.equals(userPw)) {
 				throw new LoginException("비밀번호 틀림!");
+			
 			}else {
 				System.out.println("로그인 성공!");
 			}

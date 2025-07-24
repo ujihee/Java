@@ -2,6 +2,7 @@ package test5;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 
 class Member{
 	
@@ -29,7 +30,7 @@ public class test08 {
         Member m2 = new Member("a102", "김춘추", 21);
         Member m3 = new Member("a103", "장보고", 33);
         
-        ArrayList<Member> memberlist = new ArrayList<>();
+        List<Member> memberlist = new ArrayList<>();
         memberlist.add(m1);
         memberlist.add(m2);
         memberlist.add(m3);
